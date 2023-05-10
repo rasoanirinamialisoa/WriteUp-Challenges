@@ -1,6 +1,8 @@
 
 ## _WriteUpChallenge_
 
+
+
 # I° FTP Authentification
  1. Démarrage du challenge
  2. Obtention du fichier ch1.pcap
@@ -8,11 +10,11 @@
  4. Filtre du trafique par le protocole FTP
  6. Detection d'utilisateur et de mot de passe:
  
->4.216600 10.20.144.150 → 10.20.144.151 FTP 81 Request: USER cdts3500
-4.217350 10.20.144.151 → 10.20.144.150 FTP 91 Response: 331 Enter password.
-4.217630 10.20.144.150 → 10.20.144.151 TCP 66 35974 → 21 [PSH, ACK] Seq=16 Ack=114 Win=32648 Len=0 TSval=1657564500 TSecr=1657394000
-#11 7.639420 10.20.144.150 → 10.20.144.151 FTP 81 Request: PASS cdts3500
 
+> '4.216600 10.20.144.150 → 10.20.144.151 FTP 81 Request: USER cdts3500'
+> '4.217350 10.20.144.151 → 10.20.144.150 FTP 91 Response: 331 Enter password.'
+>  '4.217630 10.20.144.150 → 10.20.144.151 TCP 66 35974 → 21 [PSH, ACK] Seq=16 Ack=114 Win=32648 Len=0 TSval=1657564500 TSecr=1657394000'
+> '11 7.639420 10.20.144.150 → 10.20.144.151 FTP 81 Request: PASS cdts3500'
 
 # II° TELNET Authentification
 
@@ -25,14 +27,13 @@
 7. Detection de mot de passe dans le contenue
 
 > ........... ..!.."..'.....#..%..%........... ..!..".."........P. ....".....b........b....	B.
-........................"......'.....#..&..&..$..&..&..$.. .....#.....'........... .9600,9600....#.bam.zing.org:0.0....'..DISPLAY.bam.zing.org:0.0......xterm-color.............!.............."............
-OpenBSD/i386 (oof) (ttyp1)
-login: .."........"ffaakkee
-.
-Password:user
-.
-Last login: Thu Dec  2 21:32:59 on ttyp1 from bam.zing.org
-
+> ........................"......'.....#..&..&..$..&..&..$.. .....#.....'........... .9600,9600....#.bam.zing.org:0.0....'..DISPLAY.bam.zing.org:0.0......xterm-color.............!.............."............
+> OpenBSD/i386 (oof) (ttyp1)
+> login: .."........"ffaakkee
+> .
+> Password:user
+> .
+> Last login: Thu Dec  2 21:32:59 on ttyp1 from bam.zing.org
 
 # III°Twitter Authentification
 1. Démarrage du challenge
@@ -41,18 +42,18 @@ Last login: Thu Dec  2 21:32:59 on ttyp1 from bam.zing.org
 4. Détection d'une seule ligne au protocole HTTP
 6. Follow ----> TCP stream
 7. Detection de mot de passe dans le contenue
+
 > GET /statuses/replies.xml HTTP/1.1\r\n
-    User-Agent: CFNetwork/330\r\n
-    Cookie: _twitter_sess=BAh7CDoJdXNlcjA6B2lkIiVmZGQ2ODc5MTMwMWFhOTFiMWExZDViZmQwMGEz%250AOWNkMyIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--ea12e7bc090d05202cd7e3f972c2b4414a97f657\r\n
-        Cookie pair: _twitter_sess=BAh7CDoJdXNlcjA6B2lkIiVmZGQ2ODc5MTMwMWFhOTFiMWExZDViZmQwMGEz%250AOWNkMyIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--ea12e7bc090d05202cd7e3f972c2b4414a97f657
-    Accept: */*\r\n
-    Accept-Language: en-us\r\n
-    Accept-Encoding: gzip, deflate\r\n
-    Authorization: Basic dXNlcnRlc3Q6cGFzc3dvcmQ=\r\n
-        Credentials: usertest:********
-    Connection: keep-alive\r\n
-    Host: twitter.com\r\n
-    
+> User-Agent: CFNetwork/330\r\n
+> Cookie: _twitter_sess=BAh7CDoJdXNlcjA6B2lkIiVmZGQ2ODc5MTMwMWFhOTFiMWExZDViZmQwMGEz%250AOWNkMyIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--ea12e7bc090d05202cd7e3f972c2b4414a97f657\r\n
+> Cookie pair: _twitter_sess=BAh7CDoJdXNlcjA6B2lkIiVmZGQ2ODc5MTMwMWFhOTFiMWExZDViZmQwMGEz%250AOWNkMyIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AA%253D%253D--ea12e7bc090d05202cd7e3f972c2b4414a97f657
+> Accept: */*\r\n
+> Accept-Language: en-us\r\n
+> Accept-Encoding: gzip, deflate\r\n
+> Authorization: Basic dXNlcnRlc3Q6cGFzc3dvcmQ=\r\n
+> Credentials: usertest:********
+> Connection: keep-alive\r\n
+> Host: twitter.com\r\n
   
 # IV°ETHERNET Trame
 1. Démarrage de challenge
@@ -85,7 +86,6 @@ Accept: */*
 
 5. Décodage du code : Y29uZmk6ZGVudGlhbA== (base 64) via le site https://www.base64decode.org/
 6. Resulat du décryptage : confi:dential (mot de passe)
-
 
 # V° BLUETOOTH - Fichier inconnu 
 1. Démarrage du challenge
