@@ -51,7 +51,6 @@
 3. Analyse du paquet dans Wireshark
 4. Détection d'une seule ligne au protocole HTTP
 6. Follow ----> TCP stream
-7. Detection de mot de passe dans le contenue
 
 > GET /statuses/replies.xml HTTP/1.1\r\n
 > 
@@ -83,6 +82,10 @@
 > Connection: keep-alive\r\n
 > 
 > Host: twitter.com\r\n
+  
+ 7. Décryptage code dXNlcnRlc3Q6cGFzc3dvcmQ= (base 64) via le site https://www.base64decode.org/
+ 8. Résultat : password (Mot de passe )
+
   
 # IV°ETHERNET Trame
 1. Démarrage de challenge
