@@ -118,16 +118,20 @@
 
 3. Décodage du code hexadecimale via le site : https://simplycalc.com/base16-decode.php
 4. Resulat du décryptage : 
-
+> 
 > s àiØZÝ`@&S`*¼ºÞÀÞ AÐB3tP¼ê}¸Á×áÏ 
 > 
 > i¹¡~ÓGET / HTTP/1.1
->
+
+> 
+
 > Authorization: Basic Y29uZmk6ZGVudGlhbA==
+> 
 > 
 > User-Agent: InsaneBrowser
 > 
 > Host: www.myipv6.org
+> 
 > 
 > Accept: */*
 
